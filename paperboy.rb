@@ -11,12 +11,15 @@ class Paperboy
   end
 
   def quota
+    (@experience / 2) + 50
   end
 
   def deliver(start_address, end_address)
+
   end
 
   def report
+    "I'm #{name}, and I've delivered #{experience}, and I've earned #{earnings} so far."
   end
 
 end
