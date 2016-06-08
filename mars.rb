@@ -13,22 +13,24 @@ class Rover
     @direction = direction
   end
 
-  def read_instruction(instruction)
-    instruction.each do |command|
-      if command == "R" || command == "L"
-        turn(command)
-      elsif command == "M"
-        move(command)
+  def read_instruction(instruction) #accepts instructions. decides move or turn
+    instructions.each do |instruction|
+      if instruction == "R" || instruction == "L"
+        turn(instruction)
+      elsif instruction == "M"
+        move(instruction)
       end
     end
-    
-    #accepts instructions. decides move or turn
   end
 
   def move #updates x, y coordinates
+    if direction = "N" && input = "L" ||
+      @direction = "W"
+
+    end
   end
+
 
   def turn #turns R or L
   end
-
 end
